@@ -1,4 +1,4 @@
-# Calculator Project
+# Odin Calculator
 
 ## Overview
 This calculator project is part of The Odin Project's Foundations course. It's a web-based calculator that performs basic arithmetic operations, providing a user-friendly interface for simple calculations.
@@ -15,18 +15,18 @@ This calculator project is part of The Odin Project's Foundations course. It's a
 - JavaScript
 
 ## Live Demo
-[View the live demo here](https://bowtiedfrogs.github.io/calculator-project/)
+[View the live demo here](https://bowtiedfrogs.github.io/odin-calculator/)
 
 ## Getting Started
 To get a local copy up and running, follow these simple steps:
 
 1. Clone the repository
    ```
-   git clone https://github.com/bowtiedfrogs/calculator-project.git
+   git clone https://github.com/bowtiedfrogs/odin-calculator.git
    ```
 2. Navigate to the project directory
    ```
-   cd calculator-project
+   cd odin-calculator
    ```
 3. Open the `index.html` file in your browser
 
