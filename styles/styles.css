@@ -10,27 +10,26 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 .calculator {
-    background-color: #333;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
 }
 
 .display {
-    background-color: #222;
-    color: #fff;
-    font-size: 2em;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 10px;
     padding: 10px;
     text-align: right;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    min-height: 60px;
 }
 
 .buttons {
@@ -40,34 +39,58 @@ body {
 }
 
 button {
-    background-color: #4a4a4a;
+    background-color: #e0e0e0;
     border: none;
-    color: #fff;
-    font-size: 1.2em;
-    padding: 15px;
     border-radius: 5px;
+    color: #333;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #5a5a5a;
+    background-color: #d0d0d0;
 }
 
 button:active {
-    background-color: #3a3a3a;
-}
-
-/* Specific button styles */
-button:nth-child(1),
-button:nth-child(2) {
-    background-color: #ff9500;
-}
-
-button:nth-child(4n) {
-    background-color: #ff9500;
+    background-color: #c0c0c0;
 }
 
 button:last-child {
     grid-column: span 2;
+}
+
+/* Operator buttons */
+button:nth-child(4n),
+button:last-child {
+    background-color: #f0a030;
+    color: white;
+}
+
+button:nth-child(4n):hover,
+button:last-child:hover {
+    background-color: #e09020;
+}
+
+button:nth-child(4n):active,
+button:last-child:active {
+    background-color: #d08010;
+}
+
+/* Clear and Delete buttons */
+button:first-child,
+button:nth-child(2) {
+    background-color: #ff4136;
+    color: white;
+}
+
+button:first-child:hover,
+button:nth-child(2):hover {
+    background-color: #e03126;
+}
+
+button:first-child:active,
+button:nth-child(2):active {
+    background-color: #d02116;
 }
