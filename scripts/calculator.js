@@ -76,3 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial display update
     updateDisplay();
 });
+
+
+// Keyboard support
