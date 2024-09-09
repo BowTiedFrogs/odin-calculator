@@ -1,23 +1,31 @@
-let firstNumber = 0;
-let secondNumber = 0;
-let operator = '';
-
-function calculatorAdd(firstNumber, secondNumber) {
-    return (firstNumber + secondNumber);
+function add(a, b) {
+    return a + b;
 }
 
-function calculatorSubtract(firstNumber, secondNumber) {
-    return (firstNumber - secondNumber);
+function subtract(a, b) {
+    return a - b;
 }
 
-function calculatorMultiply(firstNumber, secondNumber) {
-    return (firstNumber * secondNumber);
+function multiply(a, b) {
+    return a * b;
 }
 
-function calculatorDivide(firstNumber, secondNumber) {
-    if (secondNumber === 0) {
+function divide(a, b) {
+    if (b === 0) {
         return "Cannot divide by 0";
     } else {
-        return firstNumber / secondNumber;
+        return a / b;
     }
 }
+
+function operate(op, a, b) {
+    switch(op) {
+        case '+': return add(a, b);
+        case '-': return subtract(a, b);
+        case '*': return multiply(a, b);
+        case '/': return divide(a, b);
+        default: return "Error: Invalid operator";
+    }
+}
+
+export { operate };
